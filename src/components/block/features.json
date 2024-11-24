@@ -1,8 +1,9 @@
 {
   "collectionName": "components_block_features",
   "info": {
-    "displayName": "Features",
-    "icon": "chartPie"
+    "displayName": "Feature Card",
+    "icon": "chartPie",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,11 +17,17 @@
       "type": "text"
     },
     "thumb": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "component.text-field"
     }
   }
 }
